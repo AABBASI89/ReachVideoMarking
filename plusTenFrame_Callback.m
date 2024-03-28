@@ -12,6 +12,7 @@ if framePlusTen < vid_obj.vidnumFrames
     updateFrameFunction(framePlusTen, vid_obj);
 else
    msgbox('Step size is greater than the number of frame(s) available'); 
+  
 end
 
 end

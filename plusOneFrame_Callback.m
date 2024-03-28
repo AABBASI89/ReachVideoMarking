@@ -10,7 +10,7 @@ framePlusOne = curr_frame +1;
 if framePlusOne < vid_obj.vidnumFrames
     updateFrameFunction(framePlusOne, vid_obj);
 else
-   msgbox('Step size is greater than the number of frame(s) available'); 
+    msgbox('Step size is greater than the number of frame(s) available');   
 end
 
 end

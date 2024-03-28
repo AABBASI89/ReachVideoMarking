@@ -7,10 +7,10 @@ curr_frame = get(vid_fig_hand.frameEdithandle, 'String');
 curr_frame = str2num(curr_frame);
 
 frameMinusTen = curr_frame -10;
-if frameMinusTen > 1
+if frameMinusTen > 0
     updateFrameFunction(frameMinusTen, vid_obj);
 else
-   msgbox('Step size is greater than the number of frame(s) available'); 
+    msgbox('Step size is greater than the number of frame(s) available');
 end
 
 end
