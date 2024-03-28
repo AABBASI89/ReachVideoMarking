@@ -64,7 +64,7 @@ set(vid_fig_hand.listFiles_handle,'Value',1); % Add this line so that the list c
 set(vid_fig_hand.listFiles_handle,'String',video_files_cellArr(i))
 vid_fig_hand.logged_trajectories = {};
 set(vid_fig_hand.uit,'Data',{});
-set(vid_fig_hand.TRAJCHECKBOX,'Value',true);
+set(vid_fig_hand.TRAJCHECKBOX,'Value',false);
 
 % % Check for the previously saved table
 % expected_blocks = 1;
