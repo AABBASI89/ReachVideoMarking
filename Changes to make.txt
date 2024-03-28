@@ -1,0 +1,36 @@
+XX Better support for multiple reach attempts
+	Copy the method for selecting bad trials (visualizeTrialData.m)
+	Keypress handler is vid_fig_hand_fig_WindowKeyPressFcn.m
+
+Sepparate records at set methods for reach, touch, and retract
+	Copy the current method for reach
+	Purple Box is RowEditHd, line 281, lable: Trial
+	Mint Green Box is RowEditHdRCHONSET, line 298, lable: Reach Onset
+	Cyan Box is RowEditHdTRLOUTCOME, line 307, lable: Trial Outcome
+
+Mouse-driven trajectory tracking between final reach and touch
+	When does a reach end when there is no touch?
+		Make another data field for Reach Offset
+		Create way for User to delete trajectory markers
+		Do not track trajectory in trials with no touch
+		How has this been determined before (assuming we've done it before)?
+
+X change '0' hotkey to something else
+indicate that trajectory was saved in 4th column (just a '[saved]' tag is fine)
+X full trajectory mark with automatic progression through the sequence
+make warning make sounds and display on GUI
+prevent editing table and delete previous entry and sort by trial when repeat trial is logged? Do this and the sorting when trial logged
+Load trajectory points when returning to a previously logged trial
+
+
+
+Do we allow touch but no retract? r/n: yes
+Do we allow retract but no touch? r/n: no
+Do we allow the tracjectory marking to be bypassed? r/n: no for now
+Do we display the warning on the GUI? r/n: no but make it yes
+	If yes, when do we remove the warning? You can remove it at a convient point but try to pull focus to the textbox so that the user can see repeated errors grab focus 
+
+
+
+
+
