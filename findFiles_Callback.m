@@ -1,9 +1,8 @@
 function findFiles_Callback(hObject, eventdata)
 
 global vid_fig_hand;
-global s;
 
-[filename, pathname] = uigetfile('*.avi','Select a video file','Z:\');
+[filename, pathname] = uigetfile('*.avi','Select a video file','Y:\');
 
 % vid_fig_hand.VID_DIR_handle = pathname;
 % vid_fig_hand.NAME_handle = filename(1:4);
