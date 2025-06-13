@@ -26,9 +26,9 @@ for a = 1:length(RatID)
                     frame = readFrame(vid);
                     frame_resized = imresize(frame, 1/3);
                     if hand == 2
-                        croppedVid = frame_resized(100:end,100:end,:);
+                        croppedVid = frame_resized(100:end,110:end,:);
                     elseif hand == 1
-                        croppedVid = frame_resized(100:end,1:160,:);
+                        croppedVid = frame_resized(100:end,20:140,:);
                     end
                     writeVideo(vW,croppedVid);
                 end
