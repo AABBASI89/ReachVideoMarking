@@ -82,7 +82,7 @@ tic;
 while hasFrame(vid_obj.obj)
     vid_obj.structure(k).cdata = readFrame(vid_obj.obj);
     k = k+1;
-    waitbar(k/vid_obj.vidnumFrames,f,['Reading Frames... Time Elasped: ', num2str(round(toc/60,2)), ' minutes']);
+    waitbar(k/vid_obj.vidnumFrames,f,['Reading Frames... Time Elasped: ', num2str(round(toc)), ' seconds']);
 end
 
 set(vid_fig_hand.frameEdithandle, 'String', 1);
